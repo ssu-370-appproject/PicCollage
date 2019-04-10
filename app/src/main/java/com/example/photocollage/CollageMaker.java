@@ -1,3 +1,6 @@
+/* This is where collage making process happens
+like setting all the pictures and stuff
+ */
 package com.example.photocollage;
 
 import android.support.v7.app.AppCompatActivity;

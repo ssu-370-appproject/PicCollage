@@ -1,3 +1,7 @@
+/*
+Choosing the frame for the collage, Shows all the frames
+ */
+
 package com.example.photocollage;
 
 import android.support.v7.app.AppCompatActivity;

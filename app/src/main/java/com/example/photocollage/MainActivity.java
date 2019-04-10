@@ -1,3 +1,7 @@
+/*
+The opening screen
+ */
+
 package com.example.photocollage;
 
 import android.content.Intent;
@@ -17,6 +21,13 @@ public class MainActivity extends AppCompatActivity {
                 openCollageChooser();
             }
         }, 2000);
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                finish();
+            }
+        },2000);
     }
     
 
