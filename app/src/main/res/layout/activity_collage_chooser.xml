@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--This is the layout for the collage chooser-->
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -22,26 +23,162 @@
 
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/custom_border"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/collage_text">
+        app:layout_constraintTop_toBottomOf="@id/collage_text"
+        android:id="@+id/table_layout">
 
         <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_weight="1"
+            android:layout_height="0dp">
 
             <ImageView
+                android:tag="frame1"
                 android:background="@drawable/custom_border"
-                android:layout_width="fill_parent"
-                android:src="@mipmap/ic_launcher_round"/>
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/picture1" />
             <ImageView
+                android:tag="frame2"
                 android:background="@drawable/custom_border"
-                android:layout_width="fill_parent"
-                />
-
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/picture2" />
+            <ImageView
+                android:tag="frame3"
+                android:background="@drawable/custom_border"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/picture3" />
+            <ImageView
+                android:tag="frame4"
+                android:background="@drawable/custom_border"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/picture4" />
         </TableRow>
 
+        <TableRow
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:tag="frame5"
+                android:background="@drawable/custom_border"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/picture5" />
+            <ImageView
+                android:tag="frame6"
+                android:background="@drawable/custom_border"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/picture6" />
+            <ImageView
+                android:tag="frame7"
+                android:background="@drawable/custom_border"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/picture7" />
+            <ImageView
+                android:tag="frame8"
+                android:background="@drawable/custom_border"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/picture8" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:tag="frame9"
+                android:background="@drawable/custom_border"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/picture9" />
+            <ImageView
+                android:tag="frame10"
+                android:background="@drawable/custom_border"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/picture10" />
+            <ImageView
+                android:tag="frame11"
+                android:background="@drawable/custom_border"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/picture11" />
+            <ImageView
+                android:tag="frame12"
+                android:background="@drawable/custom_border"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/picture11" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:tag="frame13"
+                android:background="@drawable/custom_border"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/picture12" />
+            <ImageView
+                android:tag="frame14"
+                android:background="@drawable/custom_border"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/picture13" />
+            <ImageView
+                android:tag="frame15"
+                android:background="@drawable/custom_border"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/picture14" />
+            <ImageView
+                android:tag="frame16"
+                android:background="@drawable/custom_border"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/picture15" />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:tag="frame17"
+                android:background="@drawable/custom_border"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/picture16" />
+            <ImageView
+                android:tag="frame18"
+                android:background="@drawable/custom_border"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/picture17" />
+            <ImageView
+                android:tag="frame19"
+                android:background="@drawable/custom_border"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/picture18" />
+            <ImageView
+                android:tag="frame20"
+                android:background="@drawable/custom_border"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/picture19" />
+        </TableRow>
     </TableLayout>
 
 
