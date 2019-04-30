@@ -10,6 +10,7 @@ import android.graphics.EmbossMaskFilter;
 import android.graphics.MaskFilter;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -65,13 +66,24 @@ public class PaintView extends View {
     }
 
     public void init(Bitmap bm) {
+
         mBitmap = Bitmap.createBitmap(bm.getWidth(), bm.getHeight(), Bitmap.Config.ARGB_8888);
         mCanvas = new Canvas(mBitmap);
-        screenheight = this.getResources().getDisplayMetrics().heightPixels;
-        screenwidth = this.getResources().getDisplayMetrics().widthPixels;
-        bitheight = mBitmap.getHeight();
-        bitwidth = mBitmap.getWidth();
         mCanvas.drawBitmap(bm, 0,0,null);
+        currentColor = DEFAULT_COLOR;
+        strokeWidth = BRUSH_SIZE;
+    }
+
+    public void setBitmap(Bitmap bm) {
+        Rect viewRect = new Rect();
+        getGlobalVisibleRect(viewRect);
+
+        Bitmap scaledBitmap = Bitmap.createScaledBitmap(bm, viewRect.width(), viewRect.height(), false);
+        mBitmap = Bitmap.createBitmap(viewRect.width(), viewRect.height(), Bitmap.Config.ARGB_8888);
+
+        mCanvas = new Canvas(mBitmap);
+        mCanvas.drawBitmap(scaledBitmap, 0,0,null);
+
         currentColor = DEFAULT_COLOR;
         strokeWidth = BRUSH_SIZE;
     }

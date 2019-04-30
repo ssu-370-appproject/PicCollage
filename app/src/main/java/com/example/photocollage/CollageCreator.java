@@ -82,7 +82,7 @@ public class CollageCreator extends Activity {
             try {
                 Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), imageUri);
                 pview.clear();
-                pview.init(bitmap);
+                pview.setBitmap(bitmap);
             } catch (IOException e) {
                 e.printStackTrace();
             }
