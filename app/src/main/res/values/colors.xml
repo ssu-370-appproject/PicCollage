@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A60E0E</color>
+    <color name="colorPrimaryDark">#A60E0E</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="openScreenFontColor"> #FFFFFF </color>
+    <color name="shadowColor"> #000000 </color>
+    <color name ="navGrey"> #3C3B3B</color>
+</resources>

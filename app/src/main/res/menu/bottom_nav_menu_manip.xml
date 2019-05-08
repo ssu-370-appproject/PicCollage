@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_center"
+        android:enabled="true"
+        android:icon="@drawable/ic_vertical_align_center_black_24dp"
+        android:title="Center"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_rotate_left"
+        android:enabled="true"
+        android:icon="@drawable/ic_rotate_left_black_24dp"
+        android:title="Rotate Left"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_rotate_right"
+        android:enabled="true"
+        android:icon="@drawable/ic_rotate_right_black_24dp"
+        android:title="Rotate Right"
+        app:showAsAction="ifRoom" />
+</menu>
